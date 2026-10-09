@@ -1,4 +1,4 @@
-modules = ["ruby-3.2", "nodejs-24"]
+modules = ["ruby-3.2", "nodejs-24", "python-base-3.13"]
 
 [workflows]
 runButton = "Project"
