@@ -1,33 +1,43 @@
 :root {
   color-scheme: light;
-  --page: #f5f7fc;
-  --surface: #ffffff;
-  --surface-soft: #eaf0fb;
-  --text: #172033;
-  --muted: #535e72;
-  --accent: #245bd6;
-  --accent-strong: #1947b1;
-  --accent-soft: #e1eaff;
-  --border: #d5deed;
-  --focus: #9b3bdb;
-  --shadow: 0 12px 36px rgb(22 37 68 / 8%);
+  --page: #fff4d7;
+  --surface: #fff9e9;
+  --surface-soft: #f8e8b9;
+  --text: #193553;
+  --muted: #52647a;
+  --accent: #2852a0;
+  --accent-strong: #193b7e;
+  --accent-soft: #f1d98d;
+  --border: #ddcda0;
+  --focus: #d45139;
+  --button-text: #fff8e8;
+  --coral: #d9553d;
+  --metric-coral: #bd422d;
+  --metric-coral-text: #fff4d7;
+  --sun: #edbd49;
+  --shadow: 0 14px 34px rgb(85 63 24 / 10%);
   --page-width: 68rem;
   --reading-width: 48rem;
 }
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --page: #101523;
-  --surface: #171f30;
-  --surface-soft: #202b40;
-  --text: #f2f5fb;
-  --muted: #bbc7da;
-  --accent: #9fc0ff;
-  --accent-strong: #bed2ff;
-  --accent-soft: #263958;
-  --border: #35425a;
-  --focus: #e4a6ff;
-  --shadow: 0 14px 36px rgb(0 0 0 / 24%);
+  --page: #172d46;
+  --surface: #203a56;
+  --surface-soft: #29435c;
+  --text: #fff0c9;
+  --muted: #c1cbd0;
+  --accent: #f0bf4b;
+  --accent-strong: #ffda77;
+  --accent-soft: #4c4a42;
+  --border: #496078;
+  --focus: #ff9a78;
+  --button-text: #193553;
+  --coral: #fa8064;
+  --metric-coral: #fa8064;
+  --metric-coral-text: #193553;
+  --sun: #edbd49;
+  --shadow: 0 14px 34px rgb(4 15 25 / 22%);
 }
 
 * {
@@ -47,7 +57,7 @@ body {
     radial-gradient(ellipse at 84% 3%, color-mix(in srgb, var(--accent-soft) 56%, transparent), transparent 28rem),
     var(--page);
   color: var(--text);
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Avenir Next", Avenir, "Trebuchet MS", ui-sans-serif, system-ui, sans-serif;
   font-size: 1rem;
   line-height: 1.7;
   text-rendering: optimizeLegibility;
@@ -363,6 +373,7 @@ h1,
 h2,
 h3 {
   color: var(--text);
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
   line-height: 1.16;
   text-wrap: pretty;
 }
@@ -371,22 +382,30 @@ h1 {
   max-width: 15ch;
   margin-bottom: 1.4rem;
   font-size: clamp(2.75rem, 7vw, 5.55rem);
-  font-weight: 740;
-  letter-spacing: -0.066em;
+  font-weight: 500;
+  letter-spacing: -0.045em;
+}
+
+.hero-title {
+  max-width: 12ch;
+  font-size: clamp(3.6rem, 10vw, 7rem);
+  font-weight: 500;
+  letter-spacing: -0.052em;
+  line-height: 1.02;
 }
 
 h2 {
   margin-bottom: 1.1rem;
   font-size: clamp(1.7rem, 4vw, 2.45rem);
-  font-weight: 710;
-  letter-spacing: -0.05em;
+  font-weight: 500;
+  letter-spacing: -0.035em;
 }
 
 h3 {
   margin-bottom: 0.45rem;
   font-size: 1.16rem;
-  font-weight: 700;
-  letter-spacing: -0.025em;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 .hero-lede {
@@ -423,23 +442,15 @@ h3 {
   padding: 0.7rem 1.15rem;
   border-radius: 0.85rem;
   background: var(--accent);
-  color: var(--page);
+  color: var(--button-text);
   box-shadow: var(--shadow);
   transition: background-color 160ms ease, transform 160ms ease;
-}
-
-:root[data-theme="dark"] .button {
-  color: #111a2b;
 }
 
 .button:hover {
   transform: translateY(-2px);
   background: var(--accent-strong);
-  color: var(--page);
-}
-
-:root[data-theme="dark"] .button:hover {
-  color: #111a2b;
+  color: var(--button-text);
 }
 
 .text-link {
