@@ -220,6 +220,104 @@ button {
   max-width: 48rem;
 }
 
+.client-carousel {
+  margin-bottom: clamp(3.5rem, 8vw, 6rem);
+  padding-block: clamp(2rem, 5vw, 3rem);
+  border-block: 1px solid var(--border);
+}
+
+.carousel-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.carousel-heading h2,
+.carousel-heading .eyebrow {
+  margin-bottom: 0;
+}
+
+.carousel-controls {
+  display: flex;
+  gap: 0.55rem;
+}
+
+.carousel-button {
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.carousel-button:hover {
+  transform: translateY(-1px);
+  border-color: var(--accent);
+}
+
+.carousel-viewport {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.carousel-viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.client-logo-card {
+  display: flex;
+  width: min(15rem, calc((100vw - 6rem) / 3));
+  min-width: 12rem;
+  min-height: 7.5rem;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 1.25rem;
+  scroll-snap-align: start;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 1.05rem;
+  font-weight: 700;
+  box-shadow: var(--shadow);
+}
+
+.client-logo-card img {
+  width: 2.6rem;
+  height: 2.6rem;
+  object-fit: contain;
+  filter: none;
+}
+
+:root[data-theme="dark"] .client-logo-card img {
+  filter: invert(1);
+}
+
+.carousel-note {
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
 .prose .impact-summary {
   margin-top: 1.5rem;
   padding: 0;
@@ -578,6 +676,18 @@ h3 {
   .theme-toggle {
     min-height: 2.45rem;
     padding-inline: 0.7rem;
+  }
+
+  .carousel-heading {
+    align-items: center;
+  }
+
+  .carousel-heading h2 {
+    font-size: 1.45rem;
+  }
+
+  .client-logo-card {
+    width: min(72vw, 16rem);
   }
 
   .page-shell,

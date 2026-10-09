@@ -1,0 +1,38 @@
+<section class="client-carousel" aria-labelledby="client-carousel-title">
+  <div class="carousel-heading">
+    <div>
+      <p class="eyebrow">Selected clients</p>
+      <h2 id="client-carousel-title">Organizations I’ve supported</h2>
+    </div>
+    <div class="carousel-controls" aria-label="Client carousel controls">
+      <button class="carousel-button" type="button" data-carousel-previous aria-label="Show previous client">
+        <span aria-hidden="true">←</span>
+      </button>
+      <button class="carousel-button" type="button" data-carousel-next aria-label="Show next client">
+        <span aria-hidden="true">→</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="carousel-viewport" data-client-carousel tabindex="0" aria-label="Selected client logos">
+    <ul class="carousel-track">
+      <li class="client-logo-card">
+        <img src="{{ '/assets/images/client-logos/google.svg' | relative_url }}" alt="" width="44" height="44">
+        <span>Google</span>
+      </li>
+      <li class="client-logo-card">
+        <img src="{{ '/assets/images/client-logos/meta.svg' | relative_url }}" alt="" width="44" height="44">
+        <span>Meta</span>
+      </li>
+      <li class="client-logo-card">
+        <img src="{{ '/assets/images/client-logos/amazon.svg' | relative_url }}" alt="" width="44" height="44">
+        <span>Amazon</span>
+      </li>
+      <li class="client-logo-card">
+        <img src="{{ '/assets/images/client-logos/tiktok.svg' | relative_url }}" alt="" width="44" height="44">
+        <span>TikTok</span>
+      </li>
+    </ul>
+  </div>
+  <p class="carousel-note">Selected organizations supported through consulting work and client engagements.</p>
+</section>

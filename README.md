@@ -62,3 +62,4 @@ These are local measurements, not published-site measurements. Performance can v
 - The introductory copy summarizes the supplied résumé rather than adding employers, projects, or achievements.
 - The Contact page links to the supplied LinkedIn profile. No personal information was fetched from that URL, and no email address is published.
 - The source is prepared for GitHub Pages but remains unpublished at the user's request.
+- The Home page includes locally stored logo marks for Google, Meta, Amazon, and TikTok. Amazon was supplied later by the user as an additional client reference.
