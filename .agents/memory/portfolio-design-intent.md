@@ -19,4 +19,10 @@ Check whole-page scroll bounds on narrow viewports, not just whether the text ap
 
 **Why:** A transformed decorative shape caused mobile horizontal scrolling even after the large name was correctly sized.
 
-**How to apply:** Include narrow-phone widths in both-theme layout checks whenever a redesign introduces rotated or oversized decorative graphics.
+**How to apply:** Include narrow-phone widths in both-theme layout checks whenever a redesign introduces rotated or oversized decorative graphics. Measure the usable viewport excluding scrollbars, and let responsive layout settle before asserting bounds.
+
+The homepage should avoid repeated role introductions and overlapping sections. Its illustration should explain the work, rather than look like an unexplained journey. The client carousel is a part of the design the user likes.
+
+**Why:** The user said repeated product strategy and UX research copy made the homepage busy, and the illustration's meaning was unclear, especially in dark mode.
+
+**How to apply:** Keep the main value statement prominent, use direct headings, and ensure visual explanations remain understandable in both themes without adding duplicate introductory copy.

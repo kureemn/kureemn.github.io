@@ -50,7 +50,7 @@ html {
 }
 
 body {
-  min-width: 320px;
+  min-width: 0;
   min-height: 100vh;
   margin: 0;
   background:
@@ -320,6 +320,12 @@ button {
 
 :root[data-theme="dark"] .client-logo-card img {
   filter: invert(1);
+}
+
+.client-logo-card img.client-logo-color,
+:root[data-theme="dark"] .client-logo-card img.client-logo-color {
+  filter: none;
+  border-radius: 0.2rem;
 }
 
 .carousel-note {
