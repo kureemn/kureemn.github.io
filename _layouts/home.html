@@ -2,12 +2,31 @@
 layout: default
 ---
 <section class="hero" aria-labelledby="home-title">
-  <p class="eyebrow">{{ page.eyebrow | escape }}</p>
-  <h1 class="hero-title" id="home-title">{{ page.headline | escape }}</h1>
-  <p class="hero-lede">{{ page.intro | escape }}</p>
-  <div class="hero-actions">
-    <a class="button" href="{{ '/experience/' | relative_url }}">Explore my experience <span aria-hidden="true">↗</span></a>
-    <a class="text-link" href="{{ '/about/' | relative_url }}">A little about me <span aria-hidden="true">→</span></a>
+  <div class="hero-copy">
+    <p class="eyebrow"><span class="status-mark" aria-hidden="true"></span>{{ page.eyebrow | escape }}</p>
+    <h1 class="hero-title" id="home-title">{{ page.headline | escape }}<span class="hero-period">.</span></h1>
+    <p class="hero-lede">{{ page.intro | escape }}</p>
+    <p class="hero-context">Product strategist <span>+</span> UX researcher</p>
+    <div class="hero-actions">
+      <a class="button" href="{{ '/experience/' | relative_url }}">Explore my experience <span aria-hidden="true">↗</span></a>
+      <a class="text-link" href="{{ '/about/' | relative_url }}">A little about me <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <div class="art-stamp">PEOPLE<br>→ PRODUCT</div>
+    <svg class="decision-map" viewBox="0 0 520 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="map-line map-line--one" d="M51 354C124 354 115 260 200 260C282 260 274 116 361 116C410 116 422 153 467 153"/>
+      <path class="map-line map-line--two" d="M53 354C132 354 128 404 212 404C294 404 291 306 365 306C410 306 425 266 466 266"/>
+      <circle cx="51" cy="354" r="15" class="node node--start"/>
+      <circle cx="200" cy="260" r="23" class="node node--research"/>
+      <circle cx="361" cy="116" r="31" class="node node--decision"/>
+      <circle cx="212" cy="404" r="13" class="node node--small"/>
+      <circle cx="365" cy="306" r="20" class="node node--small"/>
+      <path d="M356 108l5 8 10 1-7 7 2 10-10-5-9 5 2-10-7-7 10-1 4-8Z" class="spark"/>
+    </svg>
+    <span class="art-note art-note--top">Listen closely</span>
+    <span class="art-note art-note--bottom">Make the next move</span>
+    <span class="art-orbit" aria-hidden="true"></span>
   </div>
 </section>
 {% include client-carousel.html %}

@@ -1,1 +1,2 @@
 - [Replit scaffold ownership](replit-scaffold-ownership.md) — managed workflows belong to artifacts; root-only static sites need validated configuration changes.
+- [Portfolio design intent](portfolio-design-intent.md) — a visual refresh must change information organization, not just colors and typography.

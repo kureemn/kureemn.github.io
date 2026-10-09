@@ -7,7 +7,7 @@
     <a class="skip-link" href="#main-content">Skip to content</a>
     {% include header.html %}
     <main id="main-content" class="site-main">
-      <div class="page-shell{% if page.wide %} wide-shell{% endif %}">
+      <div class="page-shell{% if page.wide %} wide-shell{% endif %}{% if page.url == '/' %} home-page{% endif %}">
         {{ content }}
       </div>
     </main>

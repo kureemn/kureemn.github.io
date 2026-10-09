@@ -4,28 +4,44 @@ title: Kureem | Product strategy and research
 description: Product strategy, UX research, and cross-functional product work by Kureem, a Berkeley Haas MBA candidate.
 permalink: /
 wide: true
-eyebrow: "Berkeley, California · Haas MBA candidate, 2027"
-headline: "I’m Kureem."
-intro: "I’m a product strategist and UX researcher who helps teams turn complex user and business questions into clear direction—and carry that direction into products."
+eyebrow: "Product strategy · UX research · Berkeley Haas MBA ’27"
+headline: "Kureem"
+intro: "I help teams make better product decisions."
 ---
 
-## Research that changes what teams build.
+## Decisions, made clearer.
 
-Selected results from product, research, and strategy work across technology, education, and social policy.
+Research and strategy across technology, education, and social policy.
 
-- **250+ users** informed core form-factor decisions for a Fortune 50 client’s AR glasses program.
-- **6,000+ hours** of annual manual reporting cut through a rebuild of a sales forecasting platform.
-- **60K+ employees** reached by an information architecture that brought scattered internal systems into one hub.
-{: .impact-summary}
+<div class="home-metrics" aria-label="Selected outcomes">
+  <article class="metric-tile metric-tile--sun">
+    <span class="metric-number">250<span>+</span></span>
+    <span class="metric-label">users informed AR glasses form-factor decisions</span>
+    <span class="metric-index">01 / RESEARCH</span>
+  </article>
+  <article class="metric-tile metric-tile--blue">
+    <span class="metric-number">6,000<span>+</span></span>
+    <span class="metric-label">hours of manual reporting cut each year</span>
+    <span class="metric-index">02 / PRODUCT</span>
+  </article>
+  <article class="metric-tile metric-tile--coral">
+    <span class="metric-number">60K<span>+</span></span>
+    <span class="metric-label">employees reached by a unified internal hub</span>
+    <span class="metric-index">03 / SYSTEMS</span>
+  </article>
+</div>
 
-## Curious about people. Practical about what happens next.
+## People first. Then the right next step.
 
-My work has included leading mixed-discipline teams, conducting research across markets, and translating findings into product choices. I’m currently pursuing an MBA at UC Berkeley’s Haas School of Business.
+Product strategist and UX researcher, now pursuing an MBA at UC Berkeley Haas. I’ve led cross-functional teams and research across markets, connecting what people need to what teams build.
 
-Outside the work: competitive powerlifting, 35mm film photography, and solo travel.
+<div class="about-strip">
+  <span class="about-strip-label">Away from the whiteboard</span>
+  <span>Competitive powerlifting</span><span>35mm film</span><span>Solo travel</span>
+</div>
 
-## See the work behind the outcomes.
+## A few chapters
 
-Explore experience spanning product management, UX research, consulting, and social policy research.
+Edtech product management · UX research and consulting · Social policy research
 
-[View work experience →]({{ '/experience/' | relative_url }})
+[Explore my experience →]({{ '/experience/' | relative_url }}){: .button}

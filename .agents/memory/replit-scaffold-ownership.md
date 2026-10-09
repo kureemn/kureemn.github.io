@@ -14,3 +14,9 @@ Direct edits to `.replit` are rejected by platform tooling; changes require a co
 **Why:** Replit validates its configuration before replacement.
 
 **How to apply:** Use the validated replacement process for configuration cleanup and keep application run commands managed through the workflow tools.
+
+Optional verification commands can automatically activate a language runtime and change the project configuration.
+
+**Why:** Running a Python-only contrast calculator activated a Python module and restarted the environment even though the Jekyll portfolio needed no new runtime.
+
+**How to apply:** Prefer already-installed tools for temporary checks. Inspect configuration diffs afterward and remove incidental runtimes through the package-management callbacks rather than editing `.replit` manually.

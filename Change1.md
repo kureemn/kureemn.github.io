@@ -1,25 +1,42 @@
-# Change 1: Bright text-first portfolio refresh
+# Change 1: A brighter, more visual portfolio
 
 ## Goal
 
-Give the portfolio a brighter, more welcoming first impression and make Kureem's name the clearest element of the home page. Keep the design text-first, polished, and professional with a slightly artistic typographic feel.
+Give the portfolio a brighter, more welcoming first impression while changing its layout and information hierarchy—not just its colors. Make Kureem's name clear in the hero and explain the value of the work immediately. The result should feel professional, personal, and slightly artistic, with less reading required.
 
 ## Planned changes
 
-- Take inspiration from [Elena Gonci](https://elenagonci.com/)'s bright, personal, name-forward presentation, using generous space and clear typography.
-- Use warm, soft neutrals and a restrained violet accent in light mode.
-- Replace the near-black blue dark palette with a softer, warmer charcoal palette that remains comfortable and legible.
-- Pair expressive, locally available display fonts with the existing clean system sans-serif body fonts. Do not load fonts or other assets from external services.
-- Make “I’m Kureem.” the home page headline and use the introduction to explain the product strategy and UX research focus.
-- Preserve the existing light/dark toggle, responsive layout, accessibility focus states, and portfolio content.
+- Use the personal clarity of [Elena Gonci](https://elenagonci.com/) and the visual confidence of [Numa](https://numa.uprock.pro/) as inspiration, without copying either site.
+- Put Kureem's name in the main hero instead of repeating it in the top-left navigation.
+- Restore the prominent statement: “I help teams make better product decisions.”
+- Replace the long text-led homepage with shorter, visually distinct presentations of confirmed experience and outcomes.
+- Add locally created graphic elements; do not invent client screenshots, projects, or personal photography.
+- Use expressive local typography and a bright, deliberate palette, with a readable complementary dark theme.
+- Preserve navigation, the client carousel, light/dark toggle, accessibility, and responsive behavior.
+- Keep the root-level Jekyll site with Markdown, HTML, CSS, and minimal JavaScript. Do not add a separate preview application or external dependencies.
 
 ## Direction chosen
 
-Use a bright, text-first layout without a portrait or full-bleed photo. The Numa reference was reviewed, but its photo-led hero was not selected.
+The initial color-and-typography refresh did not change the structure enough. The revised direction is brighter and more visual, with a clear identity and value proposition rather than a text-heavy introduction. Redesign the existing Jekyll site directly; review it in Preview before any GitHub push.
 
 ## Acceptance checks
 
-- Kureem is prominent in the home page hero at mobile and desktop widths.
-- Light mode feels warm and bright; dark mode is distinct without relying on near-black surfaces.
-- Body text remains easy to read in both themes, with no external font requests or new dependencies.
-- The Jekyll build succeeds, and the updated page is checked in the Replit Preview at mobile and desktop widths in both themes.
+- Kureem is prominent in the hero, not repeated in the top-left navigation.
+- “I help teams make better product decisions.” is easy to find at mobile and desktop widths.
+- The homepage has a substantially different layout, with visual elements and shorter summaries rather than successive blocks of prose.
+- All achievements and client relationships remain grounded in supplied content.
+- Both themes remain readable, and navigation and carousel controls still work.
+- No external fonts, new dependencies, or separate preview application are introduced.
+- The Jekyll build succeeds, and Preview is checked at mobile and desktop widths in both themes.
+
+## Verification
+
+- Jekyll builds successfully.
+- Checked 320px, 390px, 768px, and 1280px widths in both themes, with no page-level horizontal overflow.
+- Confirmed the theme control changes theme and saves the preference.
+- Confirmed carousel previous/next buttons and keyboard arrows move the logos.
+- Home, About, Experience, Contact, and the new local stylesheet respond successfully.
+- Visually reviewed desktop and mobile layouts, including dark mode.
+- No browser exceptions or external resource requests were recorded during the homepage checks.
+
+Review the new layout in Preview before committing or pushing this revision.
