@@ -9,7 +9,7 @@ Create a personal portfolio for Kureem at `kureemn.github.io`, built with Jekyll
 - **Home:** Introduce Kureem as a Berkeley Haas MBA candidate with experience in product strategy, UX research, and cross-functional product work.
 - **About:** Present the supplied education, fellowship, leadership, languages, volunteering, and interests.
 - **Work Experience:** Organize the supplied BlueRobins, AnswerLab, and MDRC roles, responsibilities, and results without adding claims or projects.
-- **Contact:** Provide a contact route without displaying an email address. Use a clearly marked placeholder for a professional profile or other contact link until one is supplied.
+- **Contact:** Link to the supplied LinkedIn profile without displaying an email address or fetching personal information from the profile.
 
 ## Design and accessibility
 
@@ -26,7 +26,8 @@ Create a personal portfolio for Kureem at `kureemn.github.io`, built with Jekyll
 
 ## Assumptions and approval needed
 
-- No email address will be published. No LinkedIn or other contact URL was supplied, so it will remain an explicit placeholder.
+- No email address will be published. The user supplied a LinkedIn URL for the Contact page.
+- The user chose to keep the publish-ready source only; do not publish to GitHub without a new request.
 - No portrait or project portfolio examples were supplied; the site will not invent or imply any.
 - The current project contains a pnpm workspace starter with an API server, canvas mockup, shared libraries, and scripts. Replacing it with the requested root-level Jekyll site means removing those starter application files and manifests. Replit-managed project metadata and internal configuration will be preserved where required.
 

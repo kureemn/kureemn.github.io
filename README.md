@@ -33,3 +33,32 @@ npx --yes lighthouse https://kureemn.github.io --view
 ```
 
 Target at least 90 for Performance, Accessibility, Best Practices, and SEO. Review both theme modes and check the layout at 375px and 1280px viewport widths.
+
+## Technical choices
+
+- The `github-pages` gem and GitHub Pages-supported SEO and sitemap plugins keep the local build compatible with GitHub's automatic Jekyll build.
+- System fonts avoid external font requests. CSS variables provide the two themes; the small script remembers a visitor's choice on their device.
+- Internal links and assets use Jekyll URL filters, so an empty `baseurl` works for this user site.
+
+## Verification
+
+The production Jekyll build succeeds, with canonical URLs and the sitemap using `https://kureemn.github.io`. Navigation, generated internal links, theme switching and persistence, and overflow checks passed for all four pages at 375px and 1280px.
+
+Local Lighthouse results on the generated Jekyll preview:
+
+| Page / device | Performance | Accessibility | Best Practices | SEO |
+| --- | ---: | ---: | ---: | ---: |
+| Home / mobile | 92 | 100 | 100 | 100 |
+| About / mobile | 97 | 100 | 100 | 100 |
+| Work Experience / mobile | 99 | 100 | 100 | 100 |
+| Contact / mobile | 100 | 100 | 100 | 100 |
+| Home / desktop | 100 | 100 | 100 | 100 |
+
+These are local measurements, not published-site measurements. Performance can vary with browser load and hosting conditions; rerun Lighthouse after publishing.
+
+## Assumptions and placeholders
+
+- The display name is **Kureem**; no surname or portrait was supplied.
+- The introductory copy summarizes the supplied résumé rather than adding employers, projects, or achievements.
+- The Contact page links to the supplied LinkedIn profile. No personal information was fetched from that URL, and no email address is published.
+- The source is prepared for GitHub Pages but remains unpublished at the user's request.

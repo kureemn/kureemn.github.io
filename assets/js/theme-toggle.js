@@ -5,7 +5,7 @@
 
   const updateButton = (theme) => {
     const nextTheme = theme === "dark" ? "light" : "dark";
-    button.setAttribute("aria-label", `Switch to ${nextTheme} theme`);
+    button.setAttribute("aria-label", `Switch to ${nextTheme} mode`);
     button.setAttribute("aria-pressed", String(theme === "dark"));
     label.textContent = `${nextTheme[0].toUpperCase()}${nextTheme.slice(1)} mode`;
   };

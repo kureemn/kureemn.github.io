@@ -1,0 +1,1 @@
+- [Replit scaffold ownership](replit-scaffold-ownership.md) — managed workflows belong to artifacts; root-only static sites need validated configuration changes.

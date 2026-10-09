@@ -212,6 +212,33 @@ button {
   width: min(var(--page-width), calc(100% - 3rem));
 }
 
+.page-shell.wide-shell {
+  width: min(var(--page-width), calc(100% - 3rem));
+}
+
+.home-content {
+  max-width: 48rem;
+}
+
+.prose .impact-summary {
+  margin-top: 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.prose .impact-summary li {
+  margin: 0;
+  padding: 1.2rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.impact-summary strong {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 1.3rem;
+  letter-spacing: -0.035em;
+}
+
 .hero {
   max-width: 57rem;
   padding-block: clamp(1rem, 4vw, 3rem) clamp(3.5rem, 9vw, 6.5rem);
@@ -554,7 +581,8 @@ h3 {
   }
 
   .page-shell,
-  .home-page {
+  .home-page,
+  .page-shell.wide-shell {
     width: min(100% - 2rem, var(--reading-width));
   }
 

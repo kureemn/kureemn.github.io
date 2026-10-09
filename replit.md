@@ -16,3 +16,10 @@ A static Jekyll portfolio for GitHub Pages. The website source lives at the proj
 - Open `http://127.0.0.1:4000`
 
 GitHub Pages builds this site from the `main` branch and repository root. See `README.md` for publishing and Lighthouse instructions.
+
+## User constraints
+
+- Keep the source at the repository root and use Jekyll, Markdown, HTML, CSS, and minimal JavaScript only.
+- Do not introduce a Node application, monorepo, React/Vite project, backend, database, CMS, contact-form backend, trackers, or separate preview application.
+- Do not fetch personal résumé information from URLs or invent achievements, employers, clients, metrics, or projects.
+- Do not publish an email address. Missing personal content or contact links must be clearly marked as placeholders.
