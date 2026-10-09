@@ -4,7 +4,7 @@
 
 - Make the homepage less busy by removing repeated product strategy and UX research introductions.
 - Keep the name-led hero and “I help teams make better product decisions.” as the main message.
-- Explain the illustration as a process from listening to people, to understanding their needs, to making a product decision. Make its labels and path readable in both themes.
+- Preserve the more expressive journey-style illustration beside the name, with its curving paths and varied nodes. Clean it up and explain the journey from people's needs to product decisions, rather than replacing it with a boxed flowchart. Make labels and paths readable in both themes.
 - Use direct, descriptive headings instead of vague phrases such as “Decisions, made clearer” and “People first. Then the right next step.”
 - Keep the client carousel and add Pinterest, Christie’s Auction House, Roblox, and Snapchat to the existing four clients.
 - Make About more active and easier to scan, with local logos beside Berkeley Haas and Hamilton College. Hamilton College was confirmed by the user.
@@ -37,9 +37,12 @@ Source genuine client and school logos, keep them local, and record their source
 
 ## Verification results
 
+After feedback, the earlier journey composition was restored instead of using a boxed flowchart. The refined illustration passed the checks below.
+
 - Jekyll builds successfully and the Preview workflow is running.
 - Home and About passed all 16 combinations of 320, 390, 768, and 1280 pixel widths in light and dark themes.
-- Preview screenshots were reviewed in both themes. The process labels fit inside their cards, and narrow layouts have no page-level horizontal scrolling.
+- Preview screenshots were reviewed in both themes. Journey labels fit inside their backdrops, and narrow layouts have no page-level horizontal scrolling.
+- The original two rising/exploratory curves and all five desktop node positions and sizes match the earlier illustration. A short caption explains the people-to-product decision journey.
 - All eight client logos and both school logos load from local assets.
 - Carousel buttons and keyboard navigation work, including reaching the final Snapchat card.
 - Theme selection persists between pages and after reloading.
