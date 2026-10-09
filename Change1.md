@@ -39,4 +39,4 @@ The initial color-and-typography refresh did not change the structure enough. Th
 - Visually reviewed desktop and mobile layouts, including dark mode.
 - No browser exceptions or external resource requests were recorded during the homepage checks.
 
-Review the new layout in Preview before committing or pushing this revision.
+The revised layout was reviewed in Preview and approved to keep and commit. Use the assignment's commit message: `Refresh portfolio colors and typography`.
