@@ -47,3 +47,10 @@ Thumbs.db
 # Replit
 .cache/
 .local/
+
+# Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/

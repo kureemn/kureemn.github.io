@@ -1,45 +1,18 @@
-# [Project name]
+# Kureem's portfolio
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+A static Jekyll portfolio for GitHub Pages. The website source lives at the project root.
 
-## Run & Operate
+## Source of truth
 
-- `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000)
-- `pnpm run typecheck` — full typecheck across all packages
-- `pnpm run build` — typecheck + build all packages
-- `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from the OpenAPI spec
-- `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
-- Required env: `DATABASE_URL` — Postgres connection string
+- Edit `index.md`, `about.md`, `experience.md`, and `contact.md` for page content.
+- Shared page structure is in `_layouts/default.html` and `_includes/`.
+- Styles and the small theme-toggle script are in `assets/`.
+- Keep `_config.yml` set to `url: "https://kureemn.github.io"` and `baseurl: ""` for this GitHub user site.
 
-## Stack
+## Local preview
 
-- pnpm workspaces, Node.js 24, TypeScript 5.9
-- API: Express 5
-- DB: PostgreSQL + Drizzle ORM
-- Validation: Zod (`zod/v4`), `drizzle-zod`
-- API codegen: Orval (from OpenAPI spec)
-- Build: esbuild (CJS bundle)
+- `bundle install`
+- `bundle exec jekyll serve --host 0.0.0.0`
+- Open `http://127.0.0.1:4000`
 
-## Where things live
-
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
-
-## Architecture decisions
-
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
-
-## Product
-
-_Describe the high-level user-facing capabilities of this app once they exist._
-
-## User preferences
-
-_Populate as you build — explicit user instructions worth remembering across sessions._
-
-## Gotchas
-
-_Populate as you build — sharp edges, "always run X before Y" rules._
-
-## Pointers
-
-- See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details
+GitHub Pages builds this site from the `main` branch and repository root. See `README.md` for publishing and Lighthouse instructions.

@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+<script>
+  (() => {
+    let theme = "light";
+    try {
+      const saved = localStorage.getItem("portfolio-theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      theme = saved === "light" || saved === "dark" ? saved : (prefersDark ? "dark" : "light");
+    } catch (_) {
+      theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+    document.documentElement.dataset.theme = theme;
+  })();
+</script>
+{% seo %}
+<script src="{{ '/assets/js/theme-toggle.js' | relative_url }}" defer></script>

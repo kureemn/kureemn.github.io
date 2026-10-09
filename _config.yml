@@ -1,0 +1,31 @@
+title: Kureem
+description: Product strategy, UX research, and cross-functional product work.
+url: "https://kureemn.github.io"
+baseurl: ""
+lang: en
+author:
+  name: Kureem
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - PLAN.md
+  - replit.md
+  - .replit
+  - .replitignore
+  - .gitignore
+  - .npmrc
+  - node_modules
+  - vendor
+  - .bundle
+  - .jekyll-cache
+  - .conversation
+  - .agents
+  - .cache
+  - .local
+  - attached_assets
