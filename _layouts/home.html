@@ -3,7 +3,7 @@ layout: default
 ---
 <section class="hero" aria-labelledby="home-title">
   <p class="eyebrow">{{ page.eyebrow | escape }}</p>
-  <h1 id="home-title">{{ page.headline | escape }}</h1>
+  <h1 class="hero-title" id="home-title">{{ page.headline | escape }}</h1>
   <p class="hero-lede">{{ page.intro | escape }}</p>
   <div class="hero-actions">
     <a class="button" href="{{ '/experience/' | relative_url }}">Explore my experience <span aria-hidden="true">↗</span></a>

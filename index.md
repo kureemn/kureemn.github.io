@@ -5,8 +5,8 @@ description: Product strategy, UX research, and cross-functional product work by
 permalink: /
 wide: true
 eyebrow: "Berkeley, California · Haas MBA candidate, 2027"
-headline: "I help teams make better product decisions."
-intro: "I’m Kureem, a product strategist and UX researcher with experience turning complex user and business questions into clear direction—and helping cross-functional teams carry that direction into products."
+headline: "I’m Kureem."
+intro: "I’m a product strategist and UX researcher who helps teams turn complex user and business questions into clear direction—and carry that direction into products."
 ---
 
 ## Research that changes what teams build.

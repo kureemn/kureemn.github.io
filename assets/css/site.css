@@ -1,33 +1,35 @@
 :root {
   color-scheme: light;
-  --page: #f5f7fc;
-  --surface: #ffffff;
-  --surface-soft: #eaf0fb;
-  --text: #172033;
-  --muted: #535e72;
-  --accent: #245bd6;
-  --accent-strong: #1947b1;
-  --accent-soft: #e1eaff;
-  --border: #d5deed;
-  --focus: #9b3bdb;
-  --shadow: 0 12px 36px rgb(22 37 68 / 8%);
+  --page: #fbf9f5;
+  --surface: #fffdfa;
+  --surface-soft: #f1eee8;
+  --text: #292532;
+  --muted: #625f69;
+  --accent: #63529a;
+  --accent-strong: #4e407f;
+  --accent-soft: #eee9f7;
+  --border: #e4dfd8;
+  --focus: #7943a8;
+  --button-text: #fffdfa;
+  --shadow: 0 12px 36px rgb(55 43 48 / 8%);
   --page-width: 68rem;
   --reading-width: 48rem;
 }
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --page: #101523;
-  --surface: #171f30;
-  --surface-soft: #202b40;
-  --text: #f2f5fb;
-  --muted: #bbc7da;
-  --accent: #9fc0ff;
-  --accent-strong: #bed2ff;
-  --accent-soft: #263958;
-  --border: #35425a;
-  --focus: #e4a6ff;
-  --shadow: 0 14px 36px rgb(0 0 0 / 24%);
+  --page: #26232d;
+  --surface: #302d37;
+  --surface-soft: #3a3642;
+  --text: #f5f1ed;
+  --muted: #cbc3d0;
+  --accent: #c9b6ed;
+  --accent-strong: #dfd0f6;
+  --accent-soft: #403949;
+  --border: #514a59;
+  --focus: #f0c7ad;
+  --button-text: #2b2633;
+  --shadow: 0 14px 36px rgb(9 7 14 / 22%);
 }
 
 * {
@@ -363,6 +365,7 @@ h1,
 h2,
 h3 {
   color: var(--text);
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
   line-height: 1.16;
   text-wrap: pretty;
 }
@@ -371,22 +374,30 @@ h1 {
   max-width: 15ch;
   margin-bottom: 1.4rem;
   font-size: clamp(2.75rem, 7vw, 5.55rem);
-  font-weight: 740;
-  letter-spacing: -0.066em;
+  font-weight: 500;
+  letter-spacing: -0.045em;
+}
+
+.hero-title {
+  max-width: 12ch;
+  font-size: clamp(3.6rem, 10vw, 7rem);
+  font-weight: 500;
+  letter-spacing: -0.052em;
+  line-height: 1.02;
 }
 
 h2 {
   margin-bottom: 1.1rem;
   font-size: clamp(1.7rem, 4vw, 2.45rem);
-  font-weight: 710;
-  letter-spacing: -0.05em;
+  font-weight: 500;
+  letter-spacing: -0.035em;
 }
 
 h3 {
   margin-bottom: 0.45rem;
   font-size: 1.16rem;
-  font-weight: 700;
-  letter-spacing: -0.025em;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 .hero-lede {
@@ -423,23 +434,15 @@ h3 {
   padding: 0.7rem 1.15rem;
   border-radius: 0.85rem;
   background: var(--accent);
-  color: var(--page);
+  color: var(--button-text);
   box-shadow: var(--shadow);
   transition: background-color 160ms ease, transform 160ms ease;
-}
-
-:root[data-theme="dark"] .button {
-  color: #111a2b;
 }
 
 .button:hover {
   transform: translateY(-2px);
   background: var(--accent-strong);
-  color: var(--page);
-}
-
-:root[data-theme="dark"] .button:hover {
-  color: #111a2b;
+  color: var(--button-text);
 }
 
 .text-link {
