@@ -1,17 +1,17 @@
 ---
 layout: home
-title: Kureem | Product strategy and research
-description: Product strategy, UX research, and cross-functional product work by Kureem, a Berkeley Haas MBA candidate.
+title: Kureem | Product decisions
+description: Kureem helps teams make better product decisions through research and clear thinking.
 permalink: /
 wide: true
-eyebrow: "Product strategy · UX research · Berkeley Haas MBA ’27"
+eyebrow: "Product strategy · UX research"
 headline: "Kureem"
 intro: "I help teams make better product decisions."
 ---
 
-## Decisions, made clearer.
+## Selected outcomes
 
-Research and strategy across technology, education, and social policy.
+Work across technology, education, and social policy.
 
 <div class="home-metrics" aria-label="Selected outcomes">
   <article class="metric-tile metric-tile--sun">
@@ -31,17 +31,6 @@ Research and strategy across technology, education, and social policy.
   </article>
 </div>
 
-## People first. Then the right next step.
+## Outside work
 
-Product strategist and UX researcher, now pursuing an MBA at UC Berkeley Haas. I’ve led cross-functional teams and research across markets, connecting what people need to what teams build.
-
-<div class="about-strip">
-  <span class="about-strip-label">Away from the whiteboard</span>
-  <span>Competitive powerlifting</span><span>35mm film</span><span>Solo travel</span>
-</div>
-
-## A few chapters
-
-Edtech product management · UX research and consulting · Social policy research
-
-[Explore my experience →]({{ '/experience/' | relative_url }}){: .button}
+Competitive powerlifting · 35mm film · Solo travel

@@ -6,15 +6,18 @@ layout: default
     <p class="eyebrow"><span class="status-mark" aria-hidden="true"></span>{{ page.eyebrow | escape }}</p>
     <h1 class="hero-title" id="home-title">{{ page.headline | escape }}<span class="hero-period">.</span></h1>
     <p class="hero-lede">{{ page.intro | escape }}</p>
-    <p class="hero-context">Product strategist <span>+</span> UX researcher</p>
     <div class="hero-actions">
       <a class="button" href="{{ '/experience/' | relative_url }}">Explore my experience <span aria-hidden="true">↗</span></a>
       <a class="text-link" href="{{ '/about/' | relative_url }}">A little about me <span aria-hidden="true">→</span></a>
     </div>
   </div>
-  <div class="hero-art" aria-hidden="true">
-    <div class="art-stamp">PEOPLE<br>→ PRODUCT</div>
-    <svg class="decision-map" viewBox="0 0 520 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <figure class="hero-art">
+    <span class="art-stamp" aria-hidden="true">PEOPLE<br>→ PRODUCT</span>
+    <svg class="decision-map decision-map--desktop" viewBox="0 0 520 460" role="img" aria-labelledby="decision-title decision-description" xmlns="http://www.w3.org/2000/svg">
+      <title id="decision-title">A people-led product decision journey</title>
+      <desc id="decision-description">Listen to people at the start. The main rising path moves through their needs to a product decision; a lower curving branch explores and compares alternatives.</desc>
+      <path class="map-line-halo" d="M51 354C124 354 115 260 200 260C282 260 274 116 361 116C410 116 422 153 467 153" aria-hidden="true"/>
+      <path class="map-line-halo" d="M53 354C132 354 128 404 212 404C294 404 291 306 365 306C410 306 425 266 466 266" aria-hidden="true"/>
       <path class="map-line map-line--one" d="M51 354C124 354 115 260 200 260C282 260 274 116 361 116C410 116 422 153 467 153"/>
       <path class="map-line map-line--two" d="M53 354C132 354 128 404 212 404C294 404 291 306 365 306C410 306 425 266 466 266"/>
       <circle cx="51" cy="354" r="15" class="node node--start"/>
@@ -23,11 +26,63 @@ layout: default
       <circle cx="212" cy="404" r="13" class="node node--small"/>
       <circle cx="365" cy="306" r="20" class="node node--small"/>
       <path d="M356 108l5 8 10 1-7 7 2 10-10-5-9 5 2-10-7-7 10-1 4-8Z" class="spark"/>
+      <g class="art-label">
+        <rect x="10" y="310" width="82" height="27" rx="13"/>
+        <text x="51" y="329" text-anchor="middle">Listen</text>
+      </g>
+      <g class="art-label">
+        <rect x="158" y="294" width="84" height="27" rx="13"/>
+        <text x="200" y="313" text-anchor="middle">Needs</text>
+      </g>
+      <g class="art-label">
+        <rect x="158" y="429" width="108" height="26" rx="12"/>
+        <text x="212" y="448" text-anchor="middle">Options</text>
+      </g>
+      <g class="art-label art-label--decision">
+        <rect x="319" y="53" width="84" height="27" rx="13"/>
+        <text x="361" y="72" text-anchor="middle">Decision</text>
+      </g>
+      <g class="art-label">
+        <rect x="316" y="337" width="98" height="27" rx="13"/>
+        <text x="365" y="356" text-anchor="middle">Compare</text>
+      </g>
     </svg>
-    <span class="art-note art-note--top">Listen closely</span>
-    <span class="art-note art-note--bottom">Make the next move</span>
-    <span class="art-orbit" aria-hidden="true"></span>
-  </div>
+    <svg class="decision-map decision-map--mobile" viewBox="0 0 320 430" role="img" aria-labelledby="decision-mobile-title decision-mobile-description" xmlns="http://www.w3.org/2000/svg">
+      <title id="decision-mobile-title">A people-led product decision journey</title>
+      <desc id="decision-mobile-description">Listen at the lower left. The main path rises through needs to a product decision; a lower curving branch explores and compares alternatives.</desc>
+      <path class="map-line-halo" d="M34 330C97 330 76 234 145 234C212 234 207 105 260 105C284 105 298 123 310 133" aria-hidden="true"/>
+      <path class="map-line-halo" d="M36 330C102 330 91 375 152 375C215 375 210 292 266 292C286 292 300 265 310 265" aria-hidden="true"/>
+      <path class="map-line map-line--one" d="M34 330C97 330 76 234 145 234C212 234 207 105 260 105C284 105 298 123 310 133"/>
+      <path class="map-line map-line--two" d="M36 330C102 330 91 375 152 375C215 375 210 292 266 292C286 292 300 265 310 265"/>
+      <circle cx="34" cy="330" r="12" class="node node--start"/>
+      <circle cx="145" cy="234" r="19" class="node node--research"/>
+      <circle cx="260" cy="105" r="26" class="node node--decision"/>
+      <circle cx="152" cy="375" r="11" class="node node--small"/>
+      <circle cx="266" cy="292" r="16" class="node node--small"/>
+      <path d="M255 98l5 9 10 1-7 6 2 10-10-5-9 5 2-10-7-6 10-1 4-9Z" class="spark"/>
+      <g class="art-label">
+        <rect x="0" y="347" width="70" height="26" rx="12"/>
+        <text x="35" y="366" text-anchor="middle">Listen</text>
+      </g>
+      <g class="art-label">
+        <rect x="103" y="264" width="84" height="26" rx="13"/>
+        <text x="145" y="283" text-anchor="middle">Needs</text>
+      </g>
+      <g class="art-label">
+        <rect x="94" y="393" width="116" height="26" rx="13"/>
+        <text x="152" y="412" text-anchor="middle">Options</text>
+      </g>
+      <g class="art-label art-label--decision">
+        <rect x="218" y="52" width="84" height="26" rx="13"/>
+        <text x="260" y="71" text-anchor="middle">Decision</text>
+      </g>
+      <g class="art-label">
+        <rect x="220" y="320" width="92" height="26" rx="13"/>
+        <text x="266" y="339" text-anchor="middle">Compare</text>
+      </g>
+    </svg>
+    <figcaption class="art-caption">Listening reveals needs; the lower branch explores alternatives on the way to a product decision.</figcaption>
+  </figure>
 </section>
 {% include client-carousel.html %}
 <div class="prose home-content">{{ content }}</div>
